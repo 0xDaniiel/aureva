@@ -11,7 +11,7 @@ const BlogPage = () => {
       <div className="section-container pt-28 md:pt-32 section-padding">
         <header className="max-w-2xl mb-16">
           <span className="label-caps">The Journal</span>
-          <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mt-4 text-foreground">
             Deep dives into the science of skin.
           </h1>
         </header>
