@@ -123,7 +123,7 @@ const QuizPage = () => {
         <div className="max-w-2xl mx-auto">
           <header className="text-center mb-12">
             <span className="label-caps">Skin Quiz</span>
-            <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mt-4 text-foreground">
               Discover your skin type.
             </h1>
             <p className="mt-4 prose-aureva mx-auto text-center">
