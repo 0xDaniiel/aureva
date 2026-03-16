@@ -86,7 +86,7 @@ const Index = () => {
               Read the Skin Guide <ArrowRight size={14} />
             </Link>
           </motion.div>
-          <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }}>
+          <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15, ease: [0.32, 0.72, 0, 1] as const }}>
             <div className="rounded-[24px] overflow-hidden">
               <img src={textureImage} alt="Serum texture close-up" className="w-full h-full object-cover" loading="lazy" />
             </div>
