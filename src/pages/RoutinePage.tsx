@@ -80,7 +80,7 @@ const RoutinePage = () => {
                 <Moon size={18} className="text-accent-foreground" />
               </div>
               <div>
-                <h2 className="text-xl font-serif italic text-foreground">Night Routine</h2>
+                <h2 className="text-xl font-serif font-semibold text-foreground">Night Routine</h2>
                 <p className="text-xs text-muted-foreground">~4 minutes</p>
               </div>
             </div>

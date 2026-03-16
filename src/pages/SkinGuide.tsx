@@ -67,7 +67,7 @@ const SkinGuide = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-3xl">{skin.emoji}</span>
-                <h2 className="text-2xl font-serif italic text-foreground">{skin.type} Skin</h2>
+                <h2 className="text-2xl font-serif font-semibold text-foreground">{skin.type} Skin</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

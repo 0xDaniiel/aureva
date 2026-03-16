@@ -30,7 +30,7 @@ const BlogPage = () => {
                 <span className="ingredient-badge">{article.category}</span>
                 <span className="text-xs text-muted-foreground">{article.readTime}</span>
               </div>
-              <h2 className="text-xl font-serif italic text-foreground group-hover:text-primary transition-colors">
+              <h2 className="text-xl font-serif font-semibold text-foreground group-hover:text-primary transition-colors">
                 {article.title}
               </h2>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{article.excerpt}</p>

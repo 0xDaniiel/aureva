@@ -26,7 +26,7 @@ const Products = () => {
       <div className="section-container pt-28 md:pt-32 section-padding">
         <header className="max-w-2xl mb-12">
           <span className="label-caps">The Collection</span>
-          <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mt-4 text-foreground">
             Science-backed formulas for every skin concern.
           </h1>
         </header>

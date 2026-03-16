@@ -181,7 +181,7 @@ const QuizPage = () => {
                 className="card-aureva text-center"
               >
                 <span className="label-caps">Your Result</span>
-                <h2 className="text-3xl font-serif italic text-foreground mt-2">{skinResult?.title}</h2>
+                <h2 className="text-3xl font-serif font-bold text-foreground mt-2">{skinResult?.title}</h2>
                 <p className="mt-4 prose-aureva mx-auto text-center">{skinResult?.description}</p>
 
                 <div className="mt-8 text-left">
