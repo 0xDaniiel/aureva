@@ -1,0 +1,34 @@
+[
+  {
+    "id": "build-skincare-routine",
+    "title": "How to Build a Skincare Routine That Actually Works",
+    "excerpt": "A step-by-step guide to creating a personalized routine based on your skin type, concerns, and lifestyle.",
+    "category": "Routines",
+    "readTime": "6 min",
+    "date": "2026-03-10"
+  },
+  {
+    "id": "best-ingredients-acne",
+    "title": "The Best Ingredients for Acne-Prone Skin",
+    "excerpt": "From salicylic acid to niacinamide, discover which ingredients are scientifically proven to combat breakouts.",
+    "category": "Ingredients",
+    "readTime": "5 min",
+    "date": "2026-03-05"
+  },
+  {
+    "id": "common-skincare-mistakes",
+    "title": "7 Common Skincare Mistakes You're Probably Making",
+    "excerpt": "Over-exfoliating, skipping SPF, and layering incorrectly — learn how to fix these everyday errors.",
+    "category": "Education",
+    "readTime": "4 min",
+    "date": "2026-02-28"
+  },
+  {
+    "id": "identify-skin-type",
+    "title": "How to Identify Your Skin Type in 5 Minutes",
+    "excerpt": "A simple at-home test to determine whether your skin is oily, dry, combination, or sensitive.",
+    "category": "Guides",
+    "readTime": "3 min",
+    "date": "2026-02-20"
+  }
+]
