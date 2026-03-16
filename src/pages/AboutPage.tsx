@@ -15,7 +15,7 @@ const AboutPage = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="label-caps">About Aureva</span>
-            <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mt-4 text-foreground">
               Education, not prescription.
             </h1>
             <p className="mt-6 prose-aureva text-lg">
