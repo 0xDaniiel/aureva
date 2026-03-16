@@ -69,7 +69,7 @@ const ProductDetail = () => {
               <span className="text-xs font-medium text-muted-foreground">pH Level: {product.ph}</span>
               <div className="mt-2 relative h-2 rounded-full bg-gradient-to-r from-red-300 via-green-300 to-blue-300 overflow-visible">
                 <div
-                  className="absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-foreground border-2 border-background"
+                  className="absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-primary border-2 border-background"
                   style={{ left: `${phPosition}%`, transform: `translate(-50%, -50%)` }}
                 />
               </div>
