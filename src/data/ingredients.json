@@ -1,0 +1,82 @@
+[
+  {
+    "id": "hyaluronic-acid",
+    "name": "Hyaluronic Acid",
+    "category": "Humectant",
+    "description": "A naturally occurring molecule that can hold up to 1000x its weight in water. It draws moisture from the environment into the skin, providing intense hydration at multiple layers.",
+    "skinTypes": ["All"],
+    "benefits": ["Deep hydration", "Plumps fine lines", "Improves skin elasticity", "Non-irritating"],
+    "pairsWith": ["Niacinamide", "Vitamin C", "Ceramides"],
+    "avoidWith": []
+  },
+  {
+    "id": "niacinamide",
+    "name": "Niacinamide",
+    "category": "Vitamin",
+    "description": "Also known as Vitamin B3, this multitasking ingredient regulates sebum production, minimizes pores, and strengthens the skin barrier. Effective at concentrations of 2-10%.",
+    "skinTypes": ["Oily", "Combination", "Sensitive"],
+    "benefits": ["Controls oil", "Minimizes pores", "Strengthens barrier", "Fades dark spots"],
+    "pairsWith": ["Hyaluronic Acid", "Zinc", "Ceramides"],
+    "avoidWith": ["Vitamin C (at high concentrations)"]
+  },
+  {
+    "id": "salicylic-acid",
+    "name": "Salicylic Acid",
+    "category": "BHA",
+    "description": "A beta-hydroxy acid that is oil-soluble, allowing it to penetrate deep into pores. It dissolves the bonds between dead skin cells, effectively treating and preventing acne.",
+    "skinTypes": ["Oily", "Combination"],
+    "benefits": ["Unclogs pores", "Reduces acne", "Exfoliates", "Anti-inflammatory"],
+    "pairsWith": ["Niacinamide", "Hyaluronic Acid"],
+    "avoidWith": ["Retinol", "AHA (in same routine)"]
+  },
+  {
+    "id": "retinol",
+    "name": "Retinol",
+    "category": "Retinoid",
+    "description": "A derivative of Vitamin A and the gold standard for anti-aging. It accelerates cell turnover, stimulates collagen production, and improves skin texture and tone over time.",
+    "skinTypes": ["Normal", "Combination", "Oily"],
+    "benefits": ["Anti-aging", "Boosts collagen", "Refines texture", "Fades spots"],
+    "pairsWith": ["Hyaluronic Acid", "Ceramides", "SPF"],
+    "avoidWith": ["Vitamin C", "AHA/BHA", "Benzoyl Peroxide"]
+  },
+  {
+    "id": "vitamin-c",
+    "name": "Vitamin C (L-Ascorbic Acid)",
+    "category": "Antioxidant",
+    "description": "A potent antioxidant that neutralizes free radicals, brightens the complexion, and stimulates collagen synthesis. Most effective at 10-20% concentration with a pH below 3.5.",
+    "skinTypes": ["Normal", "Dry", "Combination"],
+    "benefits": ["Brightens skin", "Antioxidant protection", "Fades dark spots", "Boosts collagen"],
+    "pairsWith": ["Vitamin E", "Ferulic Acid", "SPF"],
+    "avoidWith": ["Niacinamide (debated)", "Retinol", "AHA/BHA"]
+  },
+  {
+    "id": "ceramides",
+    "name": "Ceramides",
+    "category": "Lipid",
+    "description": "Naturally occurring lipids that make up over 50% of the skin's barrier. Topical ceramides repair and strengthen a compromised barrier, locking in moisture and keeping irritants out.",
+    "skinTypes": ["Dry", "Sensitive", "All"],
+    "benefits": ["Repairs barrier", "Locks in moisture", "Reduces sensitivity", "Anti-aging"],
+    "pairsWith": ["Hyaluronic Acid", "Niacinamide", "Cholesterol"],
+    "avoidWith": []
+  },
+  {
+    "id": "glycolic-acid",
+    "name": "Glycolic Acid",
+    "category": "AHA",
+    "description": "The smallest alpha-hydroxy acid with excellent skin penetration. It dissolves dead skin cells on the surface, revealing brighter, smoother skin underneath.",
+    "skinTypes": ["Normal", "Oily", "Combination"],
+    "benefits": ["Exfoliates surface", "Brightens", "Improves texture", "Stimulates collagen"],
+    "pairsWith": ["Hyaluronic Acid", "Niacinamide"],
+    "avoidWith": ["Retinol", "Vitamin C", "Other acids"]
+  },
+  {
+    "id": "squalane",
+    "name": "Squalane",
+    "category": "Emollient",
+    "description": "A lightweight, plant-derived oil that mimics the skin's natural sebum. It provides non-greasy hydration and helps other ingredients penetrate more effectively.",
+    "skinTypes": ["All"],
+    "benefits": ["Lightweight hydration", "Non-comedogenic", "Softens skin", "Enhances absorption"],
+    "pairsWith": ["Retinol", "Vitamin C", "Ceramides"],
+    "avoidWith": []
+  }
+]
