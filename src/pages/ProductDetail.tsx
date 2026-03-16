@@ -53,7 +53,7 @@ const ProductDetail = () => {
             transition={{ duration: 0.5, delay: 0.1, ease: [0.32, 0.72, 0, 1] }}
           >
             <span className="label-caps">{product.category}</span>
-            <h1 className="text-3xl md:text-4xl font-serif font-bold mt-2 text-foreground">{product.name}</h1>
+            <h1 className="text-3xl md:text-4xl font-serif italic mt-2 text-foreground">{product.name}</h1>
             <p className="text-2xl font-medium mt-2 text-foreground tabular-nums">{product.price}</p>
 
             <div className="mt-4 flex gap-2 flex-wrap">
