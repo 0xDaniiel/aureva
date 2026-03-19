@@ -1,73 +1,178 @@
-# Welcome to your Lovable project
+# Aureva
 
-## Project info
+Aureva is an educational skincare platform that helps people understand their skin, discover effective ingredients, and build better skincare routines.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Instead of being an ecommerce store, Aureva focuses on **skincare knowledge, guidance, and routines**. The goal is to make skincare simple, transparent, and science-backed.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Overview
 
-**Use Lovable**
+Aureva acts as a **skincare knowledge hub** where users can explore products, learn about ingredients, understand their skin type, and discover effective skincare routines.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+The website is designed as a **static frontend application**, meaning it runs entirely on the frontend without a backend or database.
 
-Changes made via Lovable will be committed automatically to this repo.
+All content is either:
 
-**Use your preferred IDE**
+- stored locally as JSON or Markdown
+- rendered through static pages
+- or fetched from external services when needed
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Features
 
-Follow these steps:
+### Product Explorer
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Browse skincare products displayed in a clean grid layout.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Each product includes:
 
-# Step 3: Install the necessary dependencies.
-npm i
+- product image
+- description
+- ingredients
+- recommended skin type
+- benefits
+- instructions for use
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Products are stored locally and rendered dynamically.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Skin Type Guide
 
-**Use GitHub Codespaces**
+Learn about the different skin types and how to care for them.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The guide explains:
 
-## What technologies are used for this project?
+- Oily skin
+- Dry skin
+- Combination skin
+- Sensitive skin
+- Normal skin
 
-This project is built with:
+Each section includes characteristics, recommended ingredients, and product suggestions.
 
-- Vite
-- TypeScript
+---
+
+### Skincare Routine Guide
+
+Aureva provides step-by-step skincare routines to help users build effective habits.
+
+**Morning Routine**
+
+1. Cleanser
+2. Toner
+3. Serum
+4. Moisturizer
+5. Sunscreen
+
+**Night Routine**
+
+1. Cleanser
+2. Treatment
+3. Moisturizer
+
+---
+
+### Ingredient Library
+
+Explore common skincare ingredients and understand what they do.
+
+Examples include:
+
+- Hyaluronic Acid — hydration and moisture retention
+- Salicylic Acid — acne treatment and pore cleansing
+- Niacinamide — oil control and skin barrier support
+
+The ingredient library helps users make informed skincare decisions.
+
+---
+
+### Skin Quiz
+
+An interactive quiz helps users determine their skin type.
+
+Based on answers to questions about skin behavior and reactions, the quiz identifies whether a user likely has:
+
+- dry skin
+- oily skin
+- combination skin
+- sensitive skin
+- normal skin
+
+It then recommends appropriate routines and ingredients.
+
+---
+
+### Blog & Skincare Tips
+
+The blog section provides educational articles on skincare topics such as:
+
+- how to build a skincare routine
+- best ingredients for acne
+- common skincare mistakes
+- identifying your skin type
+
+---
+
+### Newsletter
+
+Users can subscribe to receive skincare tips and educational content.
+
+Newsletter forms can be connected to external services like:
+
+- Mailchimp
+- ConvertKit
+- Beehiiv
+
+---
+
+## Tech Stack
+
+Aureva is built as a **static frontend application** using modern web technologies.
+
+- Next.js
 - React
-- shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+All pages are statically rendered and optimized for performance.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## Design Philosophy
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Aureva focuses on:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- clean and minimal design
+- educational content
+- transparency in skincare ingredients
+- easy-to-follow skincare guidance
+
+The goal is to make skincare **accessible, understandable, and practical** for everyone.
+
+---
+
+## Concept
+
+Aureva can be thought of as a combination of:
+
+- a skincare encyclopedia
+- a routine planner
+- an ingredient guide
+
+It helps users make smarter skincare decisions through **education and clarity**.
+
+---
+
+## License
+
+MIT License
+
+---
+
+## Author
+
+Created by **0xDaniiel**
