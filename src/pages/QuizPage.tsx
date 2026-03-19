@@ -152,7 +152,7 @@ const QuizPage = () => {
                   ))}
                 </div>
 
-                <h2 className="text-xl font-serif italic text-foreground mb-6">
+                <h2 className="text-xl font-heading font-semibold text-foreground mb-6">
                   {questions[current].question}
                 </h2>
 
