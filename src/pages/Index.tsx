@@ -43,11 +43,11 @@ const Index = () => {
             className="max-w-2xl"
           >
             <span className="label-caps">The Science of Skin</span>
-            <h1 className="text-5xl md:text-7xl font-heading font-medium mt-4 leading-[1.1] text-foreground">
-              Your skin is a living ecosystem. Treat it with precision.
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Aureva is your skincare encyclopedia — science-backed ingredients, personalized routines, and transparent education.
+             <h1 className="text-5xl md:text-[5.5rem] font-heading font-medium mt-6 leading-[1.08] text-foreground">
+               Your skin is a living ecosystem. Treat it with precision.
+             </h1>
+             <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-lg leading-[1.7]">
+               Aureva is your skincare encyclopedia — science-backed ingredients, personalized routines, and transparent education.
             </p>
             <div className="mt-8 flex gap-4 flex-wrap">
               <Link
