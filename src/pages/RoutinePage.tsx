@@ -62,7 +62,7 @@ const RoutinePage = () => {
                 <Sun size={18} className="text-accent-foreground" />
               </div>
               <div>
-                <h2 className="text-xl font-serif italic text-foreground">Morning Routine</h2>
+                <h2 className="text-xl font-heading font-semibold text-foreground">Morning Routine</h2>
                 <p className="text-xs text-muted-foreground">~3 minutes</p>
               </div>
             </div>
