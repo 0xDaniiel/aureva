@@ -1,73 +1,46 @@
-# Welcome to your Lovable project
+# Aureva — Science-Based Skincare Education Platform
 
-## Project info
+## What It Does
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Aureva is a modern skincare education website that helps people understand their skin and make informed product choices — without the marketing noise. It's not a store; it's a knowledge hub.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Product Library** — Browse science-backed skincare products filtered by category and skin type
+- **Product Detail Pages** — Deep dives into each product with ingredients, usage tips, and skin type compatibility
+- **Ingredient Encyclopedia** — Searchable database of skincare ingredients with benefits, concerns, and compatibility info
+- **Skin Type Quiz** — 5-question interactive quiz that identifies your skin type and gives personalized recommendations
+- **Skin Guide** — Comprehensive breakdown of all skin types with characteristics, recommended ingredients, and what to avoid
+- **Routine Builder** — Step-by-step skincare routine guidance (AM/PM) tailored to different skin concerns
+- **Blog / Articles** — Educational content on skincare science, myths, and best practices
+- **About Page** — The mission behind Aureva: education over prescription
+- **Contact Page** — Simple way to reach out with questions or feedback
 
-**Use Lovable**
+## Why It Was Built
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Skincare information online is overwhelming. Between influencer endorsements, contradictory advice, and ingredient fear-mongering, it's hard for anyone to know what actually works for their skin.
 
-Changes made via Lovable will be committed automatically to this repo.
+Aureva was built to solve that. The idea was simple:
 
-**Use your preferred IDE**
+1. **Transparency over marketing** — Every ingredient is explained plainly. No hidden agendas, no product pushing.
+2. **Personalization without data harvesting** — The skin quiz runs entirely client-side. No accounts, no tracking, just useful results.
+3. **Education as empowerment** — Instead of telling people what to buy, teach them *why* something works so they can decide for themselves.
+4. **Design that builds trust** — A clean, minimal aesthetic inspired by modern skincare brands. The typography (Manrope + Inter), muted palette, and generous whitespace are intentional — skincare content should feel calm, not chaotic.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- React + TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Framer Motion
+- React Router
 
-Follow these steps:
+## Getting Started
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
 git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
