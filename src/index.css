@@ -78,7 +78,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Public Sans', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
