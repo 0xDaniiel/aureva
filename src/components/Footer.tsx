@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="section-container">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
         <div className="md:col-span-1">
-          <Link to="/" className="font-heading text-2xl font-bold tracking-tight text-foreground">
+          <Link to="/" className="font-heading text-2xl font-medium tracking-tight text-foreground">
             Aureva
           </Link>
           <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-xs">
