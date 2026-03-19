@@ -48,7 +48,7 @@ const ContactPage = () => {
             onSubmit={(e) => e.preventDefault()}
             className="mt-12 card-aureva space-y-6"
           >
-            <h2 className="text-xl font-serif italic text-foreground">Send a Message</h2>
+            <h2 className="text-xl font-heading font-semibold text-foreground">Send a Message</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"

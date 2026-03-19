@@ -162,7 +162,7 @@ const Index = () => {
         <div className="section-container text-center max-w-2xl mx-auto">
           <motion.div {...fadeUp}>
             <span className="label-caps">Personalized</span>
-            <h2 className="text-3xl md:text-4xl font-serif italic mt-4 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mt-4 text-foreground">
               Not sure where to start?
             </h2>
             <p className="mt-4 prose-aureva mx-auto">

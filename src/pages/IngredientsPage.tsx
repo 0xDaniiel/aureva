@@ -27,7 +27,7 @@ const IngredientsPage = () => {
             >
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <h2 className="font-serif text-xl italic text-foreground">{ing.name}</h2>
+                  <h2 className="font-heading text-xl font-semibold text-foreground">{ing.name}</h2>
                   <span className="ingredient-badge mt-1">{ing.category}</span>
                 </div>
               </div>
