@@ -15,7 +15,7 @@ const ContactPage = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="label-caps">Get in Touch</span>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mt-4 text-foreground">
+            <h1 className="text-4xl md:text-5xl font-heading font-medium mt-4 text-foreground">
               We'd love to hear from you.
             </h1>
             <p className="mt-4 prose-aureva">
@@ -48,7 +48,7 @@ const ContactPage = () => {
             onSubmit={(e) => e.preventDefault()}
             className="mt-12 card-aureva space-y-6"
           >
-            <h2 className="text-xl font-heading font-semibold text-foreground">Send a Message</h2>
+            <h2 className="text-xl font-heading font-medium text-foreground">Send a Message</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
