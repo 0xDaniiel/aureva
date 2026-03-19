@@ -123,7 +123,7 @@
   }
 
   .prose-aureva {
-    @apply text-muted-foreground leading-relaxed;
-    max-width: 65ch;
+    @apply text-muted-foreground leading-[1.75] text-[15px];
+    max-width: 60ch;
   }
 }
