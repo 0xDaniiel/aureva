@@ -89,9 +89,9 @@
 
 @layer components {
   .font-serif-display {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-style: italic;
-    letter-spacing: -0.03em;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 
   .section-container {
