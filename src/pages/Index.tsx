@@ -72,7 +72,7 @@ const Index = () => {
         <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div {...fadeUp}>
             <span className="label-caps">Why It Matters</span>
-            <h2 className="text-3xl md:text-4xl font-serif italic mt-4 text-foreground">
+             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-4 text-foreground">
               94% of users reported improved barrier function within 14 days.
             </h2>
             <p className="mt-6 prose-aureva">
