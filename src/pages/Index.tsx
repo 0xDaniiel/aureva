@@ -43,7 +43,7 @@ const Index = () => {
             className="max-w-2xl"
           >
             <span className="label-caps">The Science of Skin</span>
-            <h1 className="text-5xl md:text-7xl font-serif italic mt-4 leading-[1.1] text-foreground">
+            <h1 className="text-5xl md:text-7xl font-heading font-bold mt-4 leading-[1.1] text-foreground">
               Your skin is a living ecosystem. Treat it with precision.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-lg leading-relaxed">
