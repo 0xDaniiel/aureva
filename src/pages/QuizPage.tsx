@@ -123,7 +123,7 @@ const QuizPage = () => {
         <div className="max-w-2xl mx-auto">
           <header className="text-center mb-12">
             <span className="label-caps">Skin Quiz</span>
-            <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mt-4 text-foreground">
               Discover your skin type.
             </h1>
             <p className="mt-4 prose-aureva mx-auto text-center">
@@ -152,7 +152,7 @@ const QuizPage = () => {
                   ))}
                 </div>
 
-                <h2 className="text-xl font-serif italic text-foreground mb-6">
+                <h2 className="text-xl font-heading font-semibold text-foreground mb-6">
                   {questions[current].question}
                 </h2>
 
@@ -181,7 +181,7 @@ const QuizPage = () => {
                 className="card-aureva text-center"
               >
                 <span className="label-caps">Your Result</span>
-                <h2 className="text-3xl font-serif italic text-foreground mt-2">{skinResult?.title}</h2>
+                <h2 className="text-3xl font-heading font-bold text-foreground mt-2">{skinResult?.title}</h2>
                 <p className="mt-4 prose-aureva mx-auto text-center">{skinResult?.description}</p>
 
                 <div className="mt-8 text-left">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -78,7 +78,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Public Sans', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -89,9 +89,9 @@
 
 @layer components {
   .font-serif-display {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-style: italic;
-    letter-spacing: -0.03em;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 
   .section-container {

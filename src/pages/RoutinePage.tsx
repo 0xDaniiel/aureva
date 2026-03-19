@@ -46,7 +46,7 @@ const RoutinePage = () => {
       <div className="section-container pt-28 md:pt-32 section-padding">
         <header className="max-w-2xl mb-16">
           <span className="label-caps">Build Your Routine</span>
-          <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold mt-4 text-foreground">
             Consistency beats complexity. Every time.
           </h1>
           <p className="mt-4 prose-aureva">
@@ -62,7 +62,7 @@ const RoutinePage = () => {
                 <Sun size={18} className="text-accent-foreground" />
               </div>
               <div>
-                <h2 className="text-xl font-serif italic text-foreground">Morning Routine</h2>
+                <h2 className="text-xl font-heading font-semibold text-foreground">Morning Routine</h2>
                 <p className="text-xs text-muted-foreground">~3 minutes</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ const RoutinePage = () => {
                 <Moon size={18} className="text-accent-foreground" />
               </div>
               <div>
-                <h2 className="text-xl font-serif italic text-foreground">Night Routine</h2>
+                <h2 className="text-xl font-heading font-semibold text-foreground">Night Routine</h2>
                 <p className="text-xs text-muted-foreground">~4 minutes</p>
               </div>
             </div>

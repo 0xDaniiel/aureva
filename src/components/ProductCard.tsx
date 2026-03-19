@@ -35,7 +35,7 @@ const ProductCard = ({ id, name, price, category, skinType }: ProductCardProps) 
         </div>
         <div className="flex justify-between items-start">
           <div>
-            <h3 className="font-serif text-lg italic">{name}</h3>
+            <h3 className="font-heading text-lg font-semibold">{name}</h3>
             <p className="text-sm text-muted-foreground mt-1">{category}</p>
           </div>
           <span className="tabular-nums font-medium text-sm">{price}</span>

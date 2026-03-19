@@ -10,7 +10,7 @@ const IngredientsPage = () => {
       <div className="section-container pt-28 md:pt-32 section-padding">
         <header className="max-w-2xl mb-16">
           <span className="label-caps">The Library</span>
-          <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold mt-4 text-foreground">
             Science-backed ingredients, explained for humans.
           </h1>
         </header>
@@ -27,7 +27,7 @@ const IngredientsPage = () => {
             >
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <h2 className="font-serif text-xl italic text-foreground">{ing.name}</h2>
+                  <h2 className="font-heading text-xl font-semibold text-foreground">{ing.name}</h2>
                   <span className="ingredient-badge mt-1">{ing.category}</span>
                 </div>
               </div>

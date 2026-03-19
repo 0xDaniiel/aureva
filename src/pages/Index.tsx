@@ -43,7 +43,7 @@ const Index = () => {
             className="max-w-2xl"
           >
             <span className="label-caps">The Science of Skin</span>
-            <h1 className="text-5xl md:text-7xl font-serif italic mt-4 leading-[1.1] text-foreground">
+            <h1 className="text-5xl md:text-7xl font-heading font-bold mt-4 leading-[1.1] text-foreground">
               Your skin is a living ecosystem. Treat it with precision.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground max-w-lg leading-relaxed">
@@ -72,7 +72,7 @@ const Index = () => {
         <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div {...fadeUp}>
             <span className="label-caps">Why It Matters</span>
-            <h2 className="text-3xl md:text-4xl font-serif italic mt-4 text-foreground">
+             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-4 text-foreground">
               94% of users reported improved barrier function within 14 days.
             </h2>
             <p className="mt-6 prose-aureva">
@@ -99,7 +99,7 @@ const Index = () => {
         <div className="section-container">
           <motion.header {...fadeUp} className="max-w-2xl mb-16">
             <span className="label-caps">The Collection</span>
-            <h2 className="text-3xl md:text-4xl font-serif italic mt-4 text-foreground">
+             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-4 text-foreground">
               Formulated for results, not trends.
             </h2>
           </motion.header>
@@ -132,7 +132,7 @@ const Index = () => {
         <div className="section-container">
           <motion.header {...fadeUp} className="max-w-2xl mb-16">
             <span className="label-caps">Fundamentals</span>
-            <h2 className="text-3xl md:text-4xl font-serif italic mt-4 text-foreground">
+             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-4 text-foreground">
               Four principles for healthier skin.
             </h2>
           </motion.header>
@@ -162,7 +162,7 @@ const Index = () => {
         <div className="section-container text-center max-w-2xl mx-auto">
           <motion.div {...fadeUp}>
             <span className="label-caps">Personalized</span>
-            <h2 className="text-3xl md:text-4xl font-serif italic mt-4 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mt-4 text-foreground">
               Not sure where to start?
             </h2>
             <p className="mt-4 prose-aureva mx-auto">

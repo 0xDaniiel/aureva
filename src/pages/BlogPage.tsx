@@ -11,7 +11,7 @@ const BlogPage = () => {
       <div className="section-container pt-28 md:pt-32 section-padding">
         <header className="max-w-2xl mb-16">
           <span className="label-caps">The Journal</span>
-          <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold mt-4 text-foreground">
             Deep dives into the science of skin.
           </h1>
         </header>
@@ -30,7 +30,7 @@ const BlogPage = () => {
                 <span className="ingredient-badge">{article.category}</span>
                 <span className="text-xs text-muted-foreground">{article.readTime}</span>
               </div>
-              <h2 className="text-xl font-serif italic text-foreground group-hover:text-primary transition-colors">
+              <h2 className="text-xl font-heading font-semibold text-foreground group-hover:text-primary transition-colors">
                 {article.title}
               </h2>
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{article.excerpt}</p>
