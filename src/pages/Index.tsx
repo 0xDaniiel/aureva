@@ -99,7 +99,7 @@ const Index = () => {
         <div className="section-container">
           <motion.header {...fadeUp} className="max-w-2xl mb-16">
             <span className="label-caps">The Collection</span>
-            <h2 className="text-3xl md:text-4xl font-serif italic mt-4 text-foreground">
+             <h2 className="text-3xl md:text-4xl font-heading font-bold mt-4 text-foreground">
               Formulated for results, not trends.
             </h2>
           </motion.header>
