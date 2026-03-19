@@ -15,7 +15,7 @@ const ContactPage = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="label-caps">Get in Touch</span>
-            <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mt-4 text-foreground">
               We'd love to hear from you.
             </h1>
             <p className="mt-4 prose-aureva">
