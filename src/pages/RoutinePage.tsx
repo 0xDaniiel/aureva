@@ -46,7 +46,7 @@ const RoutinePage = () => {
       <div className="section-container pt-28 md:pt-32 section-padding">
         <header className="max-w-2xl mb-16">
           <span className="label-caps">Build Your Routine</span>
-          <h1 className="text-4xl md:text-5xl font-serif italic mt-4 text-foreground">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold mt-4 text-foreground">
             Consistency beats complexity. Every time.
           </h1>
           <p className="mt-4 prose-aureva">
