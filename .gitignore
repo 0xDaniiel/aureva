@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Playwright test setup — keep local only
+playwright.config.ts
+playwright-fixture.ts
