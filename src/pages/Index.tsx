@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import heroImage from "@/assets/hero-products.jpg";
 import textureImage from "@/assets/texture-serum.jpg";
 import products from "@/data/products.json";
@@ -33,11 +33,49 @@ const skinTips = [
   },
 ];
 
-const fadeUp = {
-  initial: { opacity: 0, y: 20 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.6, ease: [0.32, 0.72, 0, 1] as const },
+// 🔥 Animation Variants
+const container: Variants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const fadeUp: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.32, 0.72, 0, 1],
+    },
+  },
+};
+
+const scaleIn: Variants = {
+  hidden: { opacity: 0, scale: 0.95 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: [0.32, 0.72, 0, 1],
+    },
+  },
+};
+
+const float: Variants = {
+  animate: {
+    y: [0, -8, 0],
+    transition: {
+      duration: 5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
 };
 
 const Index = () => {
@@ -45,53 +83,87 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0">
+      {/* HERO */}
+      <motion.section
+        initial="hidden"
+        animate="show"
+        variants={container}
+        className="relative min-h-[90vh] flex items-center overflow-hidden"
+      >
+        {/* Background */}
+        <motion.div
+          className="absolute inset-0"
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           <img
             src={heroImage}
             alt="Aureva skincare collection"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/30" />
-        </div>
+        </motion.div>
+
         <div className="relative section-container pt-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.32, 0.72, 0, 1] }}
-            className="max-w-2xl"
-          >
-            <span className="label-caps">The Science of Skin</span>
-            <h1 className="text-5xl md:text-[5.5rem] font-heading font-medium mt-6 leading-[1.08] text-foreground">
+          <motion.div variants={container} className="max-w-2xl">
+            <motion.span variants={fadeUp} className="label-caps">
+              The Science of Skin
+            </motion.span>
+
+            <motion.h1
+              variants={fadeUp}
+              className="text-5xl md:text-[5.5rem] font-heading font-medium mt-6 leading-[1.08] text-foreground"
+            >
               Your skin is a living ecosystem. Treat it with precision.
-            </h1>
-            <p className="mt-8 text-base md:text-lg text-muted-foreground max-w-lg leading-[1.7]">
+            </motion.h1>
+
+            <motion.p
+              variants={fadeUp}
+              className="mt-8 text-base md:text-lg text-muted-foreground max-w-lg leading-[1.7]"
+            >
               Aureva is your skincare encyclopedia with science-backed
               ingredients, personalized routines, and transparent education.
-            </p>
-            <div className="mt-8 flex gap-4 flex-wrap">
-              <Link
-                to="/products"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-[16px] bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors"
+            </motion.p>
+
+            <motion.div variants={fadeUp} className="mt-8 flex gap-4 flex-wrap">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
               >
-                Explore Products <ArrowRight size={16} />
-              </Link>
-              <Link
-                to="/quiz"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-[16px] bg-secondary text-secondary-foreground font-medium text-sm hover:bg-secondary/80 transition-colors"
+                <Link
+                  to="/products"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-[16px] bg-primary text-primary-foreground font-medium text-sm hover:bg-primary/90 transition-colors"
+                >
+                  Explore Products <ArrowRight size={16} />
+                </Link>
+              </motion.div>
+
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
               >
-                Find Your Routine
-              </Link>
-            </div>
+                <Link
+                  to="/quiz"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-[16px] bg-secondary text-secondary-foreground font-medium text-sm hover:bg-secondary/80 transition-colors"
+                >
+                  Find Your Routine
+                </Link>
+              </motion.div>
+            </motion.div>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* Why Skincare Matters */}
+      {/* WHY IT MATTERS */}
       <section className="section-padding">
         <div className="section-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <motion.div {...fadeUp}>
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             <span className="label-caps">Why It Matters</span>
             <h2 className="text-3xl md:text-4xl font-heading font-medium mt-4 text-foreground">
               94% of users reported improved barrier function within 14 days.
@@ -108,13 +180,11 @@ const Index = () => {
               Read the Skin Guide <ArrowRight size={14} />
             </Link>
           </motion.div>
+
           <motion.div
-            {...fadeUp}
-            transition={{
-              ...fadeUp.transition,
-              delay: 0.15,
-              ease: [0.32, 0.72, 0, 1] as const,
-            }}
+            variants={float}
+            animate="animate"
+            whileHover={{ scale: 1.02 }}
           >
             <div className="rounded-[24px] overflow-hidden">
               <img
@@ -128,32 +198,41 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Products */}
+      {/* FEATURED PRODUCTS */}
       <section className="section-padding bg-secondary/30">
         <div className="section-container">
-          <motion.header {...fadeUp} className="max-w-2xl mb-16">
+          <motion.header
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="max-w-2xl mb-16"
+          >
             <span className="label-caps">The Collection</span>
             <h2 className="text-3xl md:text-4xl font-heading font-medium mt-4 text-foreground">
               Formulated for results, not trends.
             </h2>
           </motion.header>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {featuredProducts.map((product, i) => (
+
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
+            {featuredProducts.map((product) => (
               <motion.div
                 key={product.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.5,
-                  delay: i * 0.1,
-                  ease: [0.32, 0.72, 0, 1],
-                }}
+                variants={scaleIn}
+                whileHover={{ y: -8, scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 200 }}
               >
                 <ProductCard {...product} />
               </motion.div>
             ))}
-          </div>
+          </motion.div>
+
           <div className="mt-12 text-center">
             <Link
               to="/products"
@@ -165,46 +244,62 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Skin Tips */}
+      {/* SKIN TIPS */}
       <section className="section-padding">
         <div className="section-container">
-          <motion.header {...fadeUp} className="max-w-2xl mb-16">
+          <motion.header
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="max-w-2xl mb-16"
+          >
             <span className="label-caps">Fundamentals</span>
             <h2 className="text-3xl md:text-4xl font-heading font-medium mt-4 text-foreground">
               Four principles for healthier skin.
             </h2>
           </motion.header>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {skinTips.map((tip, i) => (
+
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
+            {skinTips.map((tip) => (
               <motion.div
                 key={tip.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.5,
-                  delay: i * 0.1,
-                  ease: [0.32, 0.72, 0, 1],
-                }}
+                variants={scaleIn}
+                whileHover={{ y: -6, scale: 1.03 }}
                 className="card-aureva"
               >
-                <div className="w-10 h-10 rounded-[12px] bg-secondary flex items-center justify-center mb-4">
+                <motion.div
+                  className="w-10 h-10 rounded-[12px] bg-secondary flex items-center justify-center mb-4"
+                  whileHover={{ rotate: 6 }}
+                >
                   <tip.icon size={18} className="text-primary" />
-                </div>
+                </motion.div>
+
                 <h3 className="font-medium text-foreground">{tip.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                   {tip.text}
                 </p>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="section-padding bg-primary/5">
         <div className="section-container text-center max-w-2xl mx-auto">
-          <motion.div {...fadeUp}>
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             <span className="label-caps">Personalized</span>
             <h2 className="text-3xl md:text-4xl font-heading font-medium mt-4 text-foreground">
               Not sure where to start?
@@ -213,12 +308,15 @@ const Index = () => {
               Take our 2-minute skin quiz to discover your skin type and get a
               personalized routine recommendation.
             </p>
-            <Link
-              to="/quiz"
-              className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-[16px] bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
-            >
-              Take the Quiz <ArrowRight size={16} />
-            </Link>
+
+            <motion.div whileHover={{ scale: 1.07 }} whileTap={{ scale: 0.96 }}>
+              <Link
+                to="/quiz"
+                className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-[16px] bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
+              >
+                Take the Quiz <ArrowRight size={16} />
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </section>
